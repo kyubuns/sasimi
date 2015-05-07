@@ -5,7 +5,7 @@
   SandboxLayer = (function() {
     function SandboxLayer(original) {
       this.history = activeDocument.historyStates.length;
-      this.layer = original.duplicate();
+      this.layer = original;
       this.angle = 0;
     }
 

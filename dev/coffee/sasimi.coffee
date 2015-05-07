@@ -1,7 +1,7 @@
 class SandboxLayer
   constructor: (original) ->
     @history = activeDocument.historyStates.length
-    @layer = original.duplicate()
+    @layer = original
     @angle = 0
 
   reset_rotate: (angle) ->
