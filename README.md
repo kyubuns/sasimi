@@ -2,11 +2,11 @@
 
 ## 準備
 
-* sasimi.jsx( https://raw.githubusercontent.com/kyubuns/sasimi/master/sasimi.jsx )を
-'/Applications/Adobe Photoshop CC 2014/Presets/Scripts/'以下にいれる
+* sasimi.jsx( https://raw.githubusercontent.com/kyubuns/warabi/master/warabi.jsx )をダウンロード
+ * 適当にわかりやすい名前に変えるとあとで探しやすい。
+* ダウンロードしたファイルを'/Applications/Adobe Photoshop CC 2014/Presets/Scripts/'以下にいれる
  * (Windowsは、C:\Program Files\Adobe\Adobe Photoshop CC (64 Bit)\Presets\Scripts\)
 
 ## 使い方
 
-対象のレイヤー or グループを選択した状態で
-File->Scripts->sasimi
+並べたいレイヤーグループを選んで、File->Scripts->sasimi
