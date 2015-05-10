@@ -4,7 +4,7 @@
 
   SandboxLayer = (function() {
     function SandboxLayer(original) {
-      this.history = activeDocument.historyStates.length;
+      this.history = activeDocument.activeHistoryState;
       this.layer = original;
       this.angle = 0;
     }
@@ -20,7 +20,7 @@
     };
 
     SandboxLayer.prototype.destroy = function() {
-      return activeDocument.activeHistoryState = activeDocument.historyStates[this.history - 1];
+      return activeDocument.activeHistoryState = this.history;
     };
 
     return SandboxLayer;

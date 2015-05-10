@@ -1,6 +1,6 @@
 class SandboxLayer
   constructor: (original) ->
-    @history = activeDocument.historyStates.length
+    @history = activeDocument.activeHistoryState
     @layer = original
     @angle = 0
 
@@ -13,7 +13,7 @@ class SandboxLayer
     @angle += angle
 
   destroy: ->
-    activeDocument.activeHistoryState = activeDocument.historyStates[@history - 1]
+    activeDocument.activeHistoryState = @history
 
 find_targets = (layerSet) ->
   if layerSet.typename != 'LayerSet'
