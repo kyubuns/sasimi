@@ -65,4 +65,4 @@ test = (target, start_end, d) ->
   memo.sort (a, b) -> a.score - b.score
   [memo[0].angle - d/2, memo[0].angle + d/2]
 
-main()
+activeDocument.suspendHistory("script", "main()")

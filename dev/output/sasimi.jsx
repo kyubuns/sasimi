@@ -114,6 +114,6 @@
     return [memo[0].angle - d / 2, memo[0].angle + d / 2];
   };
 
-  main();
+  activeDocument.suspendHistory("script", "main()");
 
 }).call(this);
